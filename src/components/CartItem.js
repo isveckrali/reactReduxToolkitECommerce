@@ -1,7 +1,7 @@
 import React from 'react'
 import { ChevronDown, ChevronUp } from "../icons";
 
-const CartItem = ({id,img,title,price,amount}) => {
+const CartItem = ({ id, img, title, price, amount }) => {
   return (
     <article className='cart-item'>
       <img src={img} alt={title} />
@@ -12,15 +12,15 @@ const CartItem = ({id,img,title,price,amount}) => {
       </div>
 
       <div>
-          <button className='amount-btn'>
-        <ChevronUp />
-      </button>
+        <button className='amount-btn'>
+          <ChevronUp />
+        </button>
 
-      <p className='amount'>{amount}</p>
+        <p className='amount'>{amount}</p>
 
-      <button className='amount-btn'>
-        <ChevronDown />
-      </button>
+        <button className='amount-btn'>
+          <ChevronDown />
+        </button>
       </div>
     </article>
   )
