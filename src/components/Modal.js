@@ -2,7 +2,19 @@ import React from 'react'
 
 const Modal = () => {
   return (
-    <div>Modal</div>
+    <aside className='modal-container'>
+        <div className='modal'>
+            <h4>Remove all item for your shopping car</h4>
+            <div className='btn-container'>
+            <button type='button' className='btn confirm-btn'>
+                confirm
+            </button>
+            <button type='button' className='btn clear-btn'>
+                cancel
+            </button>
+            </div>
+        </div>
+    </aside>
   )
 }
 
